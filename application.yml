@@ -1,0 +1,18 @@
+﻿spring:
+  profiles:
+   actives:
+   - dev
+---
+#开发环境
+spring:
+  profiles: dev   
+  application:
+    name: lylservicecloud-config-lyl-dev
+---
+#测试环境
+spring:
+  profiles: test  
+  application:
+    name: lylservicecloud-config-lyl-test
+
+# !!!请保存为UTF-8格式    
