@@ -19,7 +19,6 @@ eureka:
 server:
   port: 8202
 spring:
-  spring:
   profiles: test   
   application:
     name: lylservicecloud-config-client-test
