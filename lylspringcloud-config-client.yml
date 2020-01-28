@@ -1,0 +1,30 @@
+﻿spring:
+  profiles:
+   actives:
+   - dev
+---
+#开发环境
+server:
+  port: 8201
+spring:
+  profiles: dev   
+  application:
+    name: lylservicecloud-config-client-dev
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka-dev.com:7001/eureka/
+---
+#测试环境
+server:
+  port: 8202
+spring:
+  spring:
+  profiles: test   
+  application:
+    name: lylservicecloud-config-client-test
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka-test.com:7001/eureka/
+# !!!请保存为UTF-8格式    
